@@ -1,0 +1,24 @@
+<!-- templates/contact.html -->
+{% extends 'pages/base.html' %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">Contact Information</div>
+        <div class="card-body">
+          <p>If you have any questions or concerns, please contact us using the information below:</p>
+          <ul>
+            <li><strong>Email:</strong> {{ email }}</li>
+            <li><strong>Address:</strong> {{ address }}</li>
+            <li><strong>Phone:</strong> {{ phone }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
